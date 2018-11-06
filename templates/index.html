@@ -5,47 +5,13 @@
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	<title>Stock Profile Calculator</title>
 </head>
 <body style="background-color: white;;
     font-family: 'Times New Roman';  color: black">
-	<h1 style="text-align: left">Kalikalyan Dash's Calculator</h1>
 <div class="container">
 	<form action = "http://localhost:5000/answer" method = "POST">
-		<div class="row">
-            <div class="form-group col-md-6">
-                <label for="ticker_symbol">Ticker Symbol :</label>
-                <input type="text" class="form-control" name="ticker_symbol" required="true">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="allotment">Allotment :</label>
-                <input type="text" class="form-control" name="allotment" required="true">
-            </div>
-        </div>
-  		<div class="row">
-            <div class="form-group col-md-6">
-    		    <label for="final_share_price">Final Share Price :</label>
-    		    <input type="text" class="form-control" name="final_share_price" required="true">
-  		    </div>
-            <div class="form-group col-md-6">
-                <label for="sell_commission">Sell Commission :</label>
-                <input type="text" class="form-control" name="sell_commission" required="true">
-            </div>
-        </div>
-  		<div class="row">
-            <div class="form-group col-md-6">
-                <label for="initial_share_price">Initial Share Price :</label>
-                <input type="text" class="form-control" name="initial_share_price" required="true">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="buy_commission">Buy Commission :</label>
-                <input type="text" class="form-control" name="buy_commission" required="true">
-            </div>
-        </div>
-        <div class="form-group">
-		    <label for="capital_gain_tax_rate">Capital Gain Tax Rate :</label>
-		    <input type="text" class="form-control" name="capital_gain_tax_rate" required="true">
-        </div>
+        <h3>Enter Ticker Symbol</h3>
+        <input type="text" name = "symbol">
 	    <input type="submit" value="Get Results" class="btn btn-primary">
 	</form>
 </div>
